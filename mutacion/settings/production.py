@@ -1,7 +1,7 @@
 __author__ = 'klaatu'
 from .base import *
 
-ALLOWED_HOSTS = ['192.241.247.216', 'www.brianaapp.com', 'brianaapp.com']
+ALLOWED_HOSTS = ['172.18.1.40']
 DEBUG = False
 DATABASES = {
     'default': {

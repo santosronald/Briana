@@ -2,10 +2,10 @@ __author__ = 'klaatu'
 from fabric.api import *
 from fabric.colors import green
 
-env.user = 'admin'
-env.host_string = '192.241.247.216'
-env.password = 'j3it1@j9z3=dzj(2uc%5iufsxu*5r3s^xzes7%377b))wio)r6'
-home_path = "/home/admin"
+env.user = 'lfarfan'
+env.host_string = '172.18.1.40'
+env.password = 'Censos2017'
+home_path = "/home/lfarfan/prueba"
 settings = "--settings='mutacion.settings.production'"
 activate_env = "source {}/brianavenv/bin/activate".format(home_path)
 manage = "python manage.py"
