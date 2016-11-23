@@ -1,0 +1,35 @@
+__author__ = 'klaatu'
+from django.conf.urls import url
+from .views import *
+
+urlpatterns = [
+    url(r'^register/$', CreateUserAPIView.as_view()),
+    url(r'^has-child/$', HasChildAPIView.as_view()),
+    url(r'^user/retrieve/$', RetrieveUserAPIView.as_view()),
+    url(r'^register-child/$', CreateUserChildRepresentativeAPIView.as_view()),
+    url(r'^children/(?P<pk>\d+)/$', RetrieveChildAPIView.as_view()),
+    url(r'^children/(?P<pk>\d+)/photo/$', UpdateChildPhotoAPIView.as_view()),
+    url(r'^children/$', ChildrenAPIView.as_view()),
+    url(r'^create-control/(?P<pk>\d+)/$', CreateControlAPIView.as_view()),
+    url(r'^delete-control/(?P<pk>\d+)/$', DeleteControlAPIView.as_view()),
+    url(r'^update-control/(?P<pk>\d+)/$', UpdateControlAPIView.as_view()),
+    url(r'^controls/(?P<pk>\d+)/$', ListControlsAPIView.as_view()),
+    url(r'^login/$', LoginAPIView.as_view()),
+    url(r'^login/mobile/(?P<backend>[^/]+)/$', FacebookMobileLoginAPI.as_view(),
+        name="facebook-mobile-login"),
+    url(r'^filter-children/$', FilterChildrenAPIView.as_view()),
+    url(r'^create-request/$', CreateRequestAPIView.as_view()),
+    url(r'^requests/$', ObtainRequestsAPIView.as_view()),
+    url(r'^response-request/(?P<pk>\d+)/$', ResponseRequestAPIView.as_view()),
+    url(r'^update-child/(?P<pk>\d+)/$', UpdateChildAPIView.as_view()),
+    url(r'^delete-child/(?P<pk>\d+)/$', DeleteChildAPIView.as_view()),
+    url(r'^list-stimulations/(?P<pk>\d+)/$',
+        ListChildStimulationAPIView.as_view()),
+    url(r'^update-stimulations/(?P<pk>\d+)/$',
+        UpdateChildStimulationAPIView.as_view()),
+    url(r'^messages/$', ListMessagesAPIView.as_view()),
+    url(r'^me/devices/gcm/$', RegisterGCMDeviceAPI.as_view(),
+        name='register-gcm-device'),
+    url(r'^mail-indotic/$', 'apps.control.views.mail_indotic',
+        name='mail-indotic'),
+]

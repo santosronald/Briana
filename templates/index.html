@@ -1,0 +1,243 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Briana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/slick-theme.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" />
+
+
+</head>
+
+<body>
+
+    <section class="inicio">
+
+        <div class="menu_logo_movil_abrir">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="menu">
+            <div class="menu_logo_movil_cerrar">
+                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="menu_secciones">
+                <ul>
+                    <li>
+                        <a href="" class="jump"><img class="icon-menu" src="{% static 'images/inicio.png' %}" alt="">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="" class="jump"><img class="icon-menu" src="{% static 'images/beneficios.png' %}" alt="">Beneficios</a>
+                    </li>
+                    <li>
+                        <a href="" class="jump"><img class="icon-menu" src="{% static 'images/aplicativo.png' %}" alt="">Aplicativo Móvil</a>
+                    </li>
+                    <li>
+                        <a href="" class="jump"><img class="icon-menu" src="{% static 'images/servicios.png' %}" alt="">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="" class="jump"><img class="icon-menu" src="{% static 'images/contacto.png' %}" alt="">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="menu_logo_android">
+                <a class="android_button" href="https://play.google.com/store/apps/details?id=com.kodevian.briana">
+                    <i class="fa fa-android fa-3x" aria-hidden="true"></i>
+                </a>
+            </div> -->
+        </div>
+        <div class="espacio">
+        </div>
+        <div class="background">
+            <div class="shadow">
+                <div class="home_content ">
+                    <div class="wrap">
+                        <div class="home-data">
+                            <div class="home-data home_title">
+                                <div class="home_logo">
+                                    <img src="{% static 'images/logo1.png' %}" alt="">
+                                </div>
+                                <!-- <a class="android_button" href="https://play.google.com/store/apps/details?id=com.kodevian.briana">
+                                    <i class="fa fa-android fa-3x" aria-hidden="true"></i>
+                                </a> -->
+                                <div class="content_button">
+                                    <a href="https://play.google.com/store/apps/details?id=com.kodevian.briana">Descargar BrianaApp</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.kodevian.briana">Descargar BrianaApp Premium</a>
+                                </div>
+                            </div>
+                            <!-- <div class="home-data home_phone">
+                                <img src="images/1.png" alt="" />
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="beneficios">
+        <section class="nubes-blancas">
+
+
+            <section class="wrapper">
+                <h2>Beneficios</h2>
+                <hr>
+                <p class="info_definition">
+                    Briana App acompaña a los padres en el cuidado de sus bebés, a través del control de las vacunas establecidas por el ministerio de salud de su país, el desarrollo físico (talla, peso, perímetro cefálico) y el desarrollo psicomotor, desde el primer mes
+                    de nacido hasta los 4 años de edad.
+                </p>
+                <section class="content_info_article">
+                    <article class="info_article">
+                        <div class="article_image">
+                            <img src="{% static 'images/rapido.png' %}" alt="">
+                        </div>
+                        <h3>Rápido y eficiente</h3>
+                        <p class="article_description">
+                            El diseño de nuestra app te permitirá manejar la app de la forma más sencilla que puedas imaginar.
+                        </p>
+                    </article>
+                    <article class="info_article">
+                        <div class="article_image">
+                            <img src="{% static 'images/soporte.png' %}" alt="">
+                        </div>
+                        <h3>Soporte y ayuda</h3>
+                        <p class="article_description">
+                            Si tienes alguna sugerencia que mejore la app o algún problema con ella, no dudes en contactar con nosotros.
+                        </p>
+                    </article>
+                    <article class="info_article">
+                        <div class="article_image">
+                            <img src="{% static 'images/seguro.png' %}" alt="">
+                        </div>
+                        <h3>Seguridad y respaldo</h3>
+                        <p class="article_description">
+                            Se ofrece respaldo y seguridad de tus datos de forma gratuita en la nube.
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- SLIDER SCREENSHOTS -->
+    <section class="screenshots">
+        <section class="shadow">
+            <section class="wrapper">
+                <div class="slider">
+                    <div class="slide"><img src="{% static 'images/11.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/12.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/13.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/14.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/15.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/16.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/17.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/18.png' %}"></div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- END -->
+    <section class="servicios">
+        <section class="nubes-blancas">
+            <section class="wrapper">
+                <h2 class="info_title">
+            Servicios
+          </h2>
+                <hr>
+                <section class="content_info_article">
+                    <article class="info_article">
+                        <div class="article_image">
+                            <img src="{% static 'images/vacuna.png' %}" alt="">
+                        </div>
+                        <h3>Vacunas</h3>
+                        <p class="article_description">
+                            Esta app te permitirá mantener el control total de tus vacunas.
+                        </p>
+                    </article>
+                    <article class="info_article">
+                        <div class="article_image">
+                            <img src="{% static 'images/informacion.png' %}" alt="">
+                        </div>
+                        <h3>Información</h3>
+                        <p class="article_description">
+                            Tambien te permitirá compartir la información de tu bebé a todas las personas que desees.
+                        </p>
+                    </article>
+                    <article class="info_article">
+                        <div class="article_image">
+                            <img src="{% static 'images/lugar.png' %}" alt="">
+                        </div>
+                        <h3>Lugar de vacunas</h3>
+                        <p class="article_description">
+                            Esta app también te permitirá conocer donde vacunar a tu bebé en el lugar mas cercano posible.
+                        </p>
+                    </article>
+                    <article class="info_article">
+                        <div class="article_image">
+                            <img src="{% static 'images/eventos.png' %}" alt="">
+                        </div>
+                        <h3>Eventos</h3>
+                        <p class="article_description">
+                            Te permitirá guardar eventos especiales como: sus primeros pasos, sus primeras palabras y cada uno de sus logros.
+                        </p>
+                    </article>
+                    <article class="info_article">
+                        <div class="article_image">
+                            <img src="{% static 'images/solicitud.png' %}" alt="">
+                        </div>
+                        <h3>Solicitud</h3>
+                        <p class="article_description">
+                            Puedes añadir a más personas para que puedan acceder a la información de tu bebé al control de sus vacunas, entre otras opciones.
+                        </p>
+                    </article>
+                </section>
+            </section>
+
+        </section>
+    </section>
+    <section class="objetivo">
+        <section class="shadow">
+            <section class="wrapper">
+                <h2>¿Por qué lo Hacemos?</h2>
+                <p class="article_description">
+                    Por esos papas que cada día quieren lo mejor para su hijo.
+                </p>
+            </section>
+        </section>
+    </section>
+    <footer class="contacto">
+        <h2 class="contacto-title">Comunícate</h2>
+        <p><a href="https://www.facebook.com/brianaapp/?ref=ts&fref=ts"><i class="fa fa-facebook-square " aria-hidden="true"></i> <span>Briana App</span></a></p>
+        <p><i class="fa fa-phone " aria-hidden="true"></i> <span>01-7455478</span></p>
+        <p><i class="fa fa-envelope " aria-hidden="true"></i> <span>brianaapp@gmail.com</span></p>
+
+        <!-- <h2 class="contacto-mail">Envíanos un correo</h2>
+        <form class="contacto-form"  method="post">
+
+            <input type="text" placeholder="Nombre">
+            <input type="mail" placeholder="Correo">
+            <input type="text" name="name" value="" placeholder="Telefono">
+            <input type="text" name="name" value="" placeholder="Asunto">
+            <textarea class="form-texto" type="text" name="name" value="" placeholder="Mensaje"></textarea>
+<<<<<<< HEAD
+            <input class="btn-enviar" type="submit" name="name" value="Enviar" >
+=======
+            <input class="btn-enviar" type="submit" name="name" value="Enviar">
+>>>>>>> c0a0f521594019cdad9d771f8e4ac7d681ec4a00
+        </form> -->
+        <h5>
+        Hecho con <a href="http://kodevian.com/">
+            <i class="fa fa-heart fa-2x" aria-hidden="true"></i></a> en Perú
+      </h5>
+    </footer>
+
+    <script src="{% static 'scripts/jquery.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'scripts/slick.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'scripts/app.js' %}" charset="utf-8"></script>
+
+</body>
+
+</html>
