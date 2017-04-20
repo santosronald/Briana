@@ -4,7 +4,7 @@ APPSECRET_PROOF = False
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'nuevo',
+        'NAME': 'brianadb',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
